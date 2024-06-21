@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Üyelik Bilgilendirme Sayfası</title>
+    <link rel="stylesheet" href="başvuru.css" />
+    <link rel="icon" type="image/x-icon" href="Assets/Pictures/favicon.ico" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- menü start -->
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 d-flex align-items-center">
+            <img src="Assets/Pictures/logo.jpg" alt="Logo" class="logo" />
+            <p>Institute Of Health Safety & Environment Association</p>
+          </div>
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-12">
+                <nav class="navbar justify-content-end">
+                  <a class="nav-link" href="index.html">Anasayfa</a>
+                  <a class="nav-link" href="#">Item 2</a>
+                  <a class="nav-link" href="#">Item 3</a>
+                  <a class="nav-link" href="#">Item 4</a>
+                  <a class="nav-link" href="login.html">Giriş Yap</a>
+                </nav>
+              </div>
+              <div class="col-12">
+                <nav class="navbar justify-content-end">
+                  <a class="nav-link" href="#">Item 6</a>
+                  <a class="nav-link" href="#">Item 7</a>
+                  <a class="nav-link" href="#">Item 8</a>
+                  <a class="nav-link" href="#">Item 9</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar justify-content-start">
+              <a class="nav-link" href="about.html">Hakkımızda</a>
+              <a class="nav-link" href="membership.html">Üyelik</a>
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown2"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Hizmetlerimiz</a
+                >
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <a class="dropdown-item" href="#">Arge Merkezi</a>
+                  <a class="dropdown-item" href="#">Kariyer Merkezi</a>
+                  <a class="dropdown-item" href="#"
+                    >Psikolojik Destek Merkezi</a
+                  >
+                  <a class="dropdown-item" href="#">Hukuki Destek Merkezi</a>
+                  <a class="dropdown-item" href="#">E-Kütüphane</a>
+                  <a class="dropdown-item" href="#">Doküman Bankası</a>
+                  <a class="dropdown-item" href="#">Etkinlik Ajansı</a>
+                  <a class="dropdown-item" href="#">Mentörlük Birimi</a>
+                  <a class="dropdown-item" href="#">Danışmanlık Merkezi</a>
+                  <a class="dropdown-item" href="#">Denetim Merkezi</a>
+                  <a class="dropdown-item" href="#">Komiteler Merkezi</a>
+                </div>
+              </div>
+              <a class="nav-link" href="#">IIHSE Akademi</a>
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown3"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Etkinlikler</a
+                >
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                  <a class="dropdown-item" href="#">Subitem 11.1</a>
+                  <a class="dropdown-item" href="#">Subitem 11.2</a>
+                  <a class="dropdown-item" href="#">Subitem 11.3</a>
+                </div>
+              </div>
+              <a class="nav-link" href="contact.html">İletişim</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- menü end-->
+
+    <!-- üyelik başvuru formu start -->
+    <div class="uye-cont">
+      <h1 class="uye-baslik">Üyelİk Formu</h1>
+      <div class="uye-form">
+        <div class="ilk-kisim">
+          <div class="ilk-yazi">
+            <h3>Ad Soyad</h3>
+            <input type="text" required />
+          </div>
+          <div class="ikinci-yazi">
+            <h3>Kimlik Numarası</h3>
+            <input type="text" required />
+          </div>
+        </div>
+        <div class="ikinci-kisim">
+          <div class="ücüncü-yazi">
+            <h3>Cinsiyet</h3>
+            <input type="text" required />
+          </div>
+          <div class="dördüncü-yazi">
+            <h3>Doğum Tarihi</h3>
+            <input type="text" required />
+          </div>
+        </div>
+        <div class="ücüncü-kisim">
+          <div class="besinci-yazi">
+            <h3>Telefon</h3>
+            <input type="text" required />
+          </div>
+          <div class="altinci-yazi">
+            <h3>E-Posta</h3>
+            <input type="text" required />
+          </div>
+        </div>
+        <div class="altinci-kisim">
+          <div class="dokuzuncu-yazi">
+            <h3>Adres</h3>
+            <input type="text" required />
+          </div>
+          <div class="onuncu-yazi">
+            <h3>Ülke</h3>
+            <select name="option" required>
+              <option selected disabled>Lütfen Ülke Seçin</option>
+              <option value="Ülke">Almanya</option>
+              <option value="Ülke">Amerika Birleşik Devletleri</option>
+              <option value="Ülke">Andorra</option>
+              <option value="Ülke">Antigua ve Barbuda</option>
+              <option value="Ülke">Arjantin</option>
+              <option value="Ülke">Arnavutluk</option>
+              <option value="Ülke">Avustralya</option>
+              <option value="Ülke">Avusturya</option>
+              <option value="Ülke">Azerbaycan</option>
+              <option value="Ülke">Bahamalar</option>
+              <option value="Ülke">Bahreyn</option>
+              <option value="Ülke">Bangladeş</option>
+              <option value="Ülke">Barbados</option>
+              <option value="Ülke">Belçika</option>
+              <option value="Ülke">Belize</option>
+              <option value="Ülke">Benin</option>
+              <option value="Ülke">Beyaz Rusya (Belarus)</option>
+              <option value="Ülke">Bhutan</option>
+              <option value="Ülke">Birleşik Arap Emirlikleri</option>
+              <option value="Ülke">Birleşik Krallık</option>
+              <option value="Ülke">Bolivya</option>
+              <option value="Ülke">Bosna-Hersek</option>
+              <option value="Ülke">Botsvana</option>
+              <option value="Ülke">Brezilya</option>
+              <option value="Ülke">Brunei</option>
+              <option value="Ülke">Bulgaristan</option>
+              <option value="Ülke">Burkina Faso</option>
+              <option value="Ülke">Burundi</option>
+              <option value="Ülke">Cabo Verde</option>
+              <option value="Ülke">Cezayir</option>
+              <option value="Ülke">Cibuti</option>
+              <option value="Ülke">Çin</option>
+              <option value="Ülke">Danimarka</option>
+              <option value="Ülke">Dominik Cumhuriyeti</option>
+              <option value="Ülke">Dominika</option>
+              <option value="Ülke">Ekvador</option>
+              <option value="Ülke">Ekvator Ginesi</option>
+              <option value="Ülke">El Salvador</option>
+              <option value="Ülke">Endonezya</option>
+              <option value="Ülke">Eritre</option>
+              <option value="Ülke">Ermenistan</option>
+              <option value="Ülke">Estonya</option>
+              <option value="Ülke">Esvatini (Svaziland)</option>
+              <option value="Ülke">Fas</option>
+              <option value="Ülke">Fiji</option>
+              <option value="Ülke">Fildişi Sahili</option>
+              <option value="Ülke">Filipinler</option>
+              <option value="Ülke">Finlandiya</option>
+              <option value="Ülke">Fransa</option>
+              <option value="Ülke">Gabon</option>
+              <option value="Ülke">Gambiya</option>
+              <option value="Ülke">Gana</option>
+              <option value="Ülke">Gine</option>
+              <option value="Ülke">Gine-Bissau</option>
+              <option value="Ülke">Grenada</option>
+              <option value="Ülke">Guatemala</option>
+              <option value="Ülke">Güney Afrika</option>
+              <option value="Ülke">Güney Kore</option>
+              <option value="Ülke">Güney Sudan</option>
+              <option value="Ülke">Gürcistan</option>
+              <option value="Ülke">Guyana</option>
+              <option value="Ülke">Haiti</option>
+              <option value="Ülke">Hırvatistan</option>
+              <option value="Ülke">Hindistan</option>
+              <option value="Ülke">Hollanda</option>
+              <option value="Ülke">Honduras</option>
+              <option value="Ülke">Irak</option>
+              <option value="Ülke">İran</option>
+              <option value="Ülke">İrlanda</option>
+              <option value="Ülke">İspanya</option>
+              <option value="Ülke">İsrail</option>
+              <option value="Ülke">İsveç</option>
+              <option value="Ülke">İsviçre</option>
+              <option value="Ülke">İtalya</option>
+              <option value="Ülke">İzlanda</option>
+              <option value="Ülke">Jamaika</option>
+              <option value="Ülke">Japonya</option>
+              <option value="Ülke">Kamboçya</option>
+              <option value="Ülke">Kamerun</option>
+              <option value="Ülke">Kanada</option>
+              <option value="Ülke">Karadağ</option>
+              <option value="Ülke">Katar</option>
+              <option value="Ülke">Kazakistan</option>
+              <option value="Ülke">Kenya</option>
+              <option value="Ülke">Kıbrıs</option>
+              <option value="Ülke">Kırgızistan</option>
+              <option value="Ülke">Kiribati</option>
+              <option value="Ülke">Kolombiya</option>
+              <option value="Ülke">Komorlar</option>
+              <option value="Ülke">Kongo Cumhuriyeti</option>
+              <option value="Ülke">Kongo Demokratik Cumhuriyeti</option>
+              <option value="Ülke">Kostarika</option>
+              <option value="Ülke">Kuveyt</option>
+              <option value="Ülke">Küba</option>
+              <option value="Ülke">Laos</option>
+              <option value="Ülke">Lesotho</option>
+              <option value="Ülke">Letonya</option>
+              <option value="Ülke">Liberya</option>
+              <option value="Ülke">Libya</option>
+              <option value="Ülke">Lihtenştayn</option>
+              <option value="Ülke">Litvanya</option>
+              <option value="Ülke">Lübnan</option>
+              <option value="Ülke">Lüksemburg</option>
+              <option value="Ülke">Macaristan</option>
+              <option value="Ülke">Madagaskar</option>
+              <option value="Ülke">Malavi</option>
+              <option value="Ülke">Maldivler</option>
+              <option value="Ülke">Malezya</option>
+              <option value="Ülke">Mali</option>
+              <option value="Ülke">Malta</option>
+              <option value="Ülke">Marshall Adaları</option>
+              <option value="Ülke">Meksika</option>
+              <option value="Ülke">Mısır</option>
+              <option value="Ülke">Mikronezya</option>
+              <option value="Ülke">Moğolistan</option>
+              <option value="Ülke">Moldova</option>
+              <option value="Ülke">Monako</option>
+              <option value="Ülke">Mozambik</option>
+              <option value="Ülke">Moritanya</option>
+              <option value="Ülke">Morityus</option>
+              <option value="Ülke">Myanmar</option>
+              <option value="Ülke">Namibya</option>
+              <option value="Ülke">Nauru</option>
+              <option value="Ülke">Nepal</option>
+              <option value="Ülke">Nijer</option>
+              <option value="Ülke">Nijerya</option>
+              <option value="Ülke">Nikaragua</option>
+              <option value="Ülke">Norveç</option>
+              <option value="Ülke">Orta Afrika Cumhuriyeti</option>
+              <option value="Ülke">Özbekistan</option>
+              <option value="Ülke">Pakistan</option>
+              <option value="Ülke">Palau</option>
+              <option value="Ülke">Panama</option>
+              <option value="Ülke">Papua Yeni Gine</option>
+              <option value="Ülke">Paraguay</option>
+              <option value="Ülke">Peru</option>
+              <option value="Ülke">Polonya</option>
+              <option value="Ülke">Portekiz</option>
+              <option value="Ülke">Romanya</option>
+              <option value="Ülke">Ruanda</option>
+              <option value="Ülke">Rusya</option>
+              <option value="Ülke">Saint Kitts ve Nevis</option>
+              <option value="Ülke">Saint Lucia</option>
+              <option value="Ülke">Saint Vincent ve Grenadinler</option>
+              <option value="Ülke">Samoa</option>
+              <option value="Ülke">San Marino</option>
+              <option value="Ülke">Sao Tome ve Principe</option>
+              <option value="Ülke">Senegal</option>
+              <option value="Ülke">Sırbistan</option>
+              <option value="Ülke">Seyşeller</option>
+              <option value="Ülke">Sierra Leone</option>
+              <option value="Ülke">Singapur</option>
+              <option value="Ülke">Slovakya</option>
+              <option value="Ülke">Slovenya</option>
+              <option value="Ülke">Solomon Adaları</option>
+              <option value="Ülke">Somali</option>
+              <option value="Ülke">Sri Lanka</option>
+              <option value="Ülke">Surinam</option>
+              <option value="Ülke">Suriye</option>
+              <option value="Ülke">Suudi Arabistan</option>
+              <option value="Ülke">Şili</option>
+              <option value="Ülke">Tacikistan</option>
+              <option value="Ülke">Tanzanya</option>
+              <option value="Ülke">Tayland</option>
+              <option value="Ülke">Togo</option>
+              <option value="Ülke">Tonga</option>
+              <option value="Ülke">Trinidad ve Tobago</option>
+              <option value="Ülke">Tunus</option>
+              <option value="Ülke">Tuvalu</option>
+              <option value="Ülke">Türkiye</option>
+              <option value="Ülke">Türkmenistan</option>
+              <option value="Ülke">Uganda</option>
+              <option value="Ülke">Ukrayna</option>
+              <option value="Ülke">Umman</option>
+              <option value="Ülke">Uruguay</option>
+              <option value="Ülke">Ürdün</option>
+              <option value="Ülke">Vanuatu</option>
+              <option value="Ülke">Vatikan</option>
+              <option value="Ülke">Venezuela</option>
+              <option value="Ülke">Vietnam</option>
+              <option value="Ülke">Yemen</option>
+              <option value="Ülke">Yeni Zelanda</option>
+              <option value="Ülke">Yunanistan</option>
+              <option value="Ülke">Zambiya</option>
+              <option value="Ülke">Zimbabve</option>
+            </select>
+          </div>
+        </div>
+        <div class="besinci-kisim">
+          <div class="sekizinci-yazi">
+            <h3>Üyelik Ücreti: 100TL</h3>
+          </div>
+        </div>
+        <div class="dördüncü-kisim">
+          <div class="yedinci-yazi">
+            <h3>Hangi üyelik kategorisini istiyorsun?</h3>
+            <select id="plan" name="plan" required>
+              <option selected disabled>Lütfen Seçin</option>
+              <option value="basic">
+                Uzman Üyeliği Çeşitleri (Asil Üye (AIHSE))
+              </option>
+              <option value="premium">
+                Uzman Üyeliği Çeşitleri (Teknik Üye (TechIHSE))
+              </option>
+              <option value="vip">
+                Uzman Üyeliği Çeşitleri (Mezun Üye (GradIHSE))
+              </option>
+              <option value="Ülke">
+                Uzman Üyeliği Çeşitleri (Onur Üyeliği)
+              </option>
+              <option value="Ülke">
+                Şirket Üyeliği Çeşitleri(Üniversiteler Üyeliği)
+              </option>
+              <option value="Ülke">
+                Şirket Üyeliği Çeşitleri(Dernekler Üyeliği)
+              </option>
+              <option value="Ülke">
+                Şirket Üyeliği Çeşitleri(Enstitüler Üyeliği)
+              </option>
+            </select>
+          </div>
+        </div>
+        <button><a href="ödeme.html"> ÜYE OL</a></button>
+      </div>
+
+      <h1 class="uye-alt"></h1>
+    </div>
+    <!-- üyelik başvuru formu end -->
+
+    <!-- footer start -->
+    <footer class="footer" id="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4><strong>İletişim</strong></h4>
+            <ul>
+              <li><a href="#">info@iihse.com</a></li>
+              <li><a href="#">0 (551) 052 00 33</a></li>
+              <li><a href="#">Item</a></li>
+              <li><a href="#">Item</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><strong>Sosyal Medya</strong></h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/iihse" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://x.com/iihseofficial" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/iihseofficial/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/turkiyeihse/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4><strong>Adres</strong></h4>
+            <ul>
+              <li>
+                <a href="#"
+                  >Hekimzade Mh. Çınarlı Çeşme Cd. No:5/B <br />
+                  Edremit, BALIKESİR</a
+                >
+              </li>
+              <li><a href="#">Item</a></li>
+              <li><a href="#">Item</a></li>
+              <li><a href="#">Item</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><strong>Header</strong></h4>
+            <ul>
+              <li><a href="#">Item</a></li>
+              <li><a href="#">Item</a></li>
+              <li><a href="#">Item</a></li>
+              <li><a href="#">Item</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- menu js start -->
+    <script>
+      var navbar = document.querySelector(".navbar.justify-content-start");
+      var hrElement = document.querySelector("hr");
+
+      window.addEventListener("scroll", function () {
+        var scrollValue = window.scrollY;
+
+        if (scrollValue > hrElement.offsetTop) {
+          navbar.style.position = "fixed";
+          navbar.style.top = "0";
+        } else {
+          navbar.style.position = "";
+          navbar.style.top = "";
+        }
+      });
+    </script>
+    <!-- menu js end -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMN5H8w99f5np2w6ST5K3pG5szWtyoYYn73cK5RQ4ie09R3CBb+Fz/w/6FJv5zPp"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
