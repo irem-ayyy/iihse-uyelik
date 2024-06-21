@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Yatay taşmayı engeller */
+}
+
+/* menü start */
+header .logo {
+  max-width: 100%;
+  height: 100px;
+  display: block;
+  width: 200px;
+}
+
+header .col-md-2 p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+  white-space: nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header .nav-link {
+  color: black;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-right: 15px;
+}
+header .div .col-md-10 {
+  padding: 0;
+  margin: 0;
+}
+header div.col-12:nth-child(2) {
+  margin-left: 32px;
+}
+header div.col-12:not(:last-child) {
+  margin-left: 32px;
+}
+header .nav-link:hover {
+  color: #fff;
+  background-color: #3498db;
+}
+
+header .col-12:nth-child(2) .nav-link {
+  border: 1px solid black;
+}
+
+header .navbar.justify-content-start {
+  z-index: 1000;
+  margin-left: -15px;
+  padding-bottom: 20px;
+  background-color: white;
+  width: 100%;
+  left: 0;
+}
+/* menü end */
+
+/* üyelik start */
+.container {
+  height: 50% !important;
+  width: 55% !important;
+  border: 3px solid white;
+  box-shadow: 5px 5px 10px rgb(27, 26, 26);
+  margin: 15px auto;
+  padding: 35px 50px;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+}
+
+.container hr {
+  margin-top: 10px;
+  border: 1px solid rgb(172, 172, 172);
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.container img {
+  width: 70px;
+  height: 70px;
+  margin-top: -69px;
+  margin-left: 23em;
+}
+
+.container h1 {
+  margin-left: 2.5em;
+  font-size: 48px;
+}
+
+.container .ilk-baslik {
+  margin-left: 1.2em;
+  font-weight: bold;
+}
+
+.container .ilk-paragraf {
+  margin-left: 3.5em;
+  font-size: 19px;
+}
+
+.container .ilk-liste {
+  margin-left: 5.8em;
+  font-size: 17px;
+  margin-right: 3em;
+}
+
+.container .ikinci-baslik {
+  margin-left: 1.2em;
+  font-weight: bold;
+}
+
+.container .ikinci-paragraf {
+  font-size: 19px;
+  margin-left: 3.5em;
+}
+
+.container .üçüncü-paragraf {
+  font-size: 19px;
+  margin-left: 3.5em;
+}
+
+.container .ikinci-liste {
+  margin-left: 5.8em;
+  font-size: 17px;
+  margin-right: 3em;
+}
+
+.container .container-btn {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 3px rgb(12, 12, 12);
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 55px auto;
+  cursor: pointer;
+  width: 15em;
+}
+
+.container .container-btn:hover {
+  opacity: 0.5;
+}
+
+.container .uye-btn {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+/* üyelik start */
+
+/* footer start */
+footer {
+  background-color: black;
+  padding: 70px 0;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 40px;
+}
+footer .footer-container {
+  width: 100%;
+  margin: auto;
+  background-color: black;
+  padding-left: 60px;
+}
+
+footer .footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+footer .footer-col h4 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+footer .footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 20;
+  bottom: -10px;
+  background-color: #3abef9;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+footer .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+footer .footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #333;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  display: block;
+  transition: all 0.3s ease;
+  margin-left: -40px;
+}
+footer .footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 10px;
+}
+footer .footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: black;
+  transition: all 0.5s ease;
+}
+footer .footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/* footer end */
+
+/* responsive start */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar.justify-content-end {
+    align-items: flex-end;
+  }
+
+  .navbar.justify-content-start {
+    align-items: flex-start;
+  }
+  @media (max-width: 1200px) {
+    .container {
+      padding: 0 15px;
+    }
+
+    .box {
+      padding: 15px;
+    }
+
+    .taskbar {
+      margin-bottom: 15px;
+    }
+
+    .taskbar button {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+/* 767px ve altı için stil */
+@media (max-width: 767px) {
+  .container {
+    width: 100% !important;
+    padding: 20px 30px;
+  }
+
+  .container img {
+    margin-left: 14.5em !important;
+  }
+
+  .container h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .container .ilk-baslik {
+    font-size: 20px;
+  }
+
+  .container .ilk-paragraf,
+  .ilk-liste {
+    font-size: 14px;
+  }
+
+  .container .ikinci-baslik {
+    font-size: 20px;
+  }
+
+  .container .ikinci-paragraf,
+  .ikinci-liste,
+  .üçüncü-paragraf {
+    font-size: 14px;
+  }
+
+  .container .container-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100% !important;
+    padding: 20px 30px;
+  }
+
+  .container img {
+    margin-left: 14em !important;
+  }
+
+  .container h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 2.5em;
+  }
+
+  .container .ilk-baslik {
+    font-size: 25px;
+  }
+
+  .container .ilk-paragraf,
+  .ilk-liste {
+    font-size: 16.7px;
+  }
+
+  .container .ikinci-baslik {
+    font-size: 25px;
+  }
+
+  .container .ikinci-paragraf,
+  .ikinci-liste {
+    font-size: 16.7px;
+  }
+
+  .container .üçüncü-paragraf {
+    font-size: 16.7px;
+  }
+
+  .container .container-btn {
+    font-size: 15px;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100% !important;
+    padding: 20px 30px;
+  }
+
+  .container img {
+    margin-left: 19.5em !important;
+  }
+
+  .container h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-left: 3em;
+  }
+
+  .container .ilk-baslik {
+    font-size: 28px;
+  }
+
+  .container .ilk-paragraf,
+  .ilk-liste {
+    font-size: 18px;
+  }
+
+  .container .ikinci-baslik {
+    font-size: 28px;
+  }
+
+  .container .ikinci-paragraf,
+  .ikinci-liste {
+    font-size: 18px;
+  }
+
+  .container .üçüncü-paragraf {
+    font-size: 18px;
+  }
+
+  .container .container-btn {
+    font-size: 19px;
+    padding: 20px 25px;
+  }
+}
+/* responsive end */
